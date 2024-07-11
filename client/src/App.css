@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*^ Home Page */
+.products {
+    padding: 60px 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: orangered;
+    height: 100vh;
+    width: 100%;
+}
+
+.head_name {
+    text-align: center;
+    color: white;
+    letter-spacing: 2.5px;
+    font-style: italic;
+    font-size: 60px;
+}
+
+.btn_cont .create_button {
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(185, 46, 46);
+    border: 1px solid rgb(185, 46, 46);
+    color: #fff;
+    border-radius: 10px;
+    float: right;
+    cursor: pointer;
+    transition: all 0.126s ease-in;
+}
+
+.btn_cont .create_button:hover {
+    background-color: red;
+    border: 1px solid #fff;
+}
+
+.cards_container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: orange;
+    width: 340px;
+    height: 420px;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1000;
+}
+
+.card .image_cont {
+    display: flex;
+    justify-content: center;
+    width: 340px;
+}
+
+.card img {
+    margin-bottom: 1rem;
+    width: 300px;
+    height: 200px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    object-fit: cover;
+}
+
+.card_info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 6px;
+    padding: 0 10px;
+    margin-bottom: 1rem;
+}
+
+.card_info .prdc_name {
+    font-weight: bolder;
+    font-size: 27px;
+}
+
+.card_info .prdc_price {
+    font-weight: 700;
+    font-size: 20px;
+    color: blue;
+}
+
+.card_info .prdc_quantity {
+    font-weight: 700;
+    font-size: 18px;
+    color: red;
+}
+
+.card_info .prdc_description {
+    font-weight: 700;
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+}
+
+.card_btns_cont {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    gap: 1rem;
+}
+
+.card_btns_cont .card_button {
+    padding: 6px 12px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: forestgreen;
+    cursor: pointer;
+    transition: all 0.126s ease-in-out;
+}
+
+.card_btns_cont .card_button:hover {
+    background-color: green;
+}
+
+/*^ Create Page */
+.form_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form_container input {
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+textarea {
+    resize: none;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    height: 90px;
+    padding-top: 12px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form .create_buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+form .create_buttons button {
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(185, 46, 46);
+    border: 1px solid rgb(185, 46, 46);
+    color: #fff;
+    border-radius: 10px;
+    float: right;
+    cursor: pointer;
+    transition: all 0.126s ease-in;
+}
+
+form .create_buttons button:hover {
+    background-color: red;
+    border: 1px solid #fff;
+}
+
+/*^ Read */
+.product_in {
+    padding: 60px 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: orange;
+    height: 100vh;
+    width: 100%;
+}
+
+.product_in_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product_in_info img {
+    width: 500px;
+    height: 370px;
+}
